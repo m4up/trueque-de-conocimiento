@@ -23,9 +23,3 @@ Sitio web informativo para presentar la propuesta académica **Trueque de Conoci
 - HTML5, CSS3 y JavaScript.
 - Materialize CSS y JavaScript mediante CDN.
 - Estilos personalizados en `css/style.css` e interacciones en `js/main.js`.
-
-## Ejecución local
-
-Abre `index.html` en un navegador. También puedes abrir la carpeta en Visual Studio Code y usar la extensión Live Server para visualizar el sitio mientras trabajas.
-
-> Este proyecto corresponde a un sitio informativo local. No implementa todavía la plataforma funcional de intercambio de conocimientos.
