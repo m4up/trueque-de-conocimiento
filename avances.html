@@ -1,19 +1,221 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sitio informativo del proyecto Trueque de Conocimiento.">
-  <title>Avances | Trueque de Conocimiento</title>
-  <!-- Materialize CSS: CDN requerido por la actividad. -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!-- Estructura inicial: desarrollar contenido en una etapa posterior. -->
-
-  <!-- Materialize JavaScript: CDN requerido por la actividad. -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Estado actual y próximos pasos del sitio informativo Trueque de Conocimiento."
+    />
+    <title>Avances | Trueque de Conocimiento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <div class="nav-wrapper container">
+          <a class="brand-logo" href="index.html" aria-label="Trueque de Conocimiento, inicio"
+            ><span class="brand-mark" aria-hidden="true">tc</span
+            ><span class="brand-name">Trueque<span>de Conocimiento</span></span></a
+          >
+          <a
+            href="#menu-movil"
+            data-target="menu-movil"
+            class="sidenav-trigger"
+            aria-label="Abrir menú"
+            ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg
+          ></a>
+          <form class="site-search" id="site-search-form" role="search">
+            <label class="visually-hidden" for="site-search">Buscar en el sitio</label
+            ><input
+              id="site-search"
+              name="q"
+              type="search"
+              placeholder="Buscar en el sitio"
+              autocomplete="off"
+              aria-controls="site-search-results"
+            /><button type="submit" aria-label="Buscar">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.6" />
+                <path d="m16 16 4.2 4.2" />
+              </svg>
+            </button>
+            <div
+              class="search-results"
+              id="site-search-results"
+              role="region"
+              aria-label="Resultados de búsqueda"
+              aria-live="polite"
+              hidden
+            ></div>
+          </form>
+          <ul class="right hide-on-med-and-down nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li class="active"><a href="avances.html" aria-current="page">Avances</a></li>
+            <li>
+              <a class="nav-contact" href="contacto.html"
+                >Contacto <span aria-hidden="true">↗</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="menu-movil" aria-label="Menú de navegación">
+        <li class="mobile-brand">
+          <a href="index.html"
+            ><span class="brand-mark" aria-hidden="true">tc</span>Trueque de Conocimiento</a
+          >
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li class="active"><a href="avances.html" aria-current="page">Avances</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow"><span></span> Desarrollo del proyecto</p>
+          <h1>Avanzar también<br />es <em>dar forma a la idea.</em></h1>
+          <p>
+            Este espacio refleja el estado del sitio informativo local y los pasos que siguen para
+            completarlo.
+          </p>
+        </div>
+      </section>
+      <section class="section-space">
+        <div class="container">
+          <div class="progress-summary">
+            <div>
+              <span class="status-pill"><span></span> En desarrollo</span>
+              <h2>Etapa actual:<br /><em>sitio informativo.</em></h2>
+              <p>
+                La plataforma funcional de intercambio sigue siendo una idea futura. El trabajo de
+                esta etapa presenta el proyecto y sus fundamentos mediante un sitio web estático.
+              </p>
+            </div>
+            <div class="progress-graphic" aria-label="Sitio informativo local">
+              <div class="progress-ring"><strong>WEB</strong><span>versión local</span></div>
+            </div>
+          </div>
+          <div class="section-heading timeline-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark"><span></span> Recorrido del sitio</p>
+              <h2>Lo que ya está tomando<br /><em>forma.</em></h2>
+            </div>
+          </div>
+          <div class="advance-controls" aria-label="Controles de visualización de avances">
+            <button
+              class="btn advance-action"
+              id="toggle-advance-details"
+              type="button"
+              aria-expanded="false"
+              aria-controls="advance-timeline"
+            >
+              Mostrar detalles
+            </button>
+          </div>
+          <div class="timeline-list" id="advance-timeline">
+            <article class="timeline-item complete">
+              <span class="timeline-marker">✓</span>
+              <div>
+                <p>01 · ESTRUCTURA</p>
+                <h3>Secciones principales preparadas</h3>
+                <span class="advance-detail" hidden
+                  >Inicio, Nosotros, Objetivos, Avances y Contacto cuentan con navegación
+                  común.</span
+                >
+              </div>
+              <span class="timeline-state">Completado</span>
+            </article>
+            <article class="timeline-item complete">
+              <span class="timeline-marker">✓</span>
+              <div>
+                <p>02 · PRESENTACIÓN</p>
+                <h3>Portada informativa desarrollada</h3>
+                <span class="advance-detail" hidden
+                  >La página inicial comunica el propósito de la propuesta y sus áreas de
+                  interés.</span
+                >
+              </div>
+              <span class="timeline-state">Completado</span>
+            </article>
+            <article class="timeline-item complete">
+              <span class="timeline-marker">✓</span>
+              <div>
+                <p>03 · CONTENIDO</p>
+                <h3>Páginas informativas desarrolladas</h3>
+                <span class="advance-detail" hidden
+                  >Se presentan misión, visión, objetivos y el estado real del proyecto.</span
+                >
+              </div>
+              <span class="timeline-state">Completado</span>
+            </article>
+            <article class="timeline-item current">
+              <span class="timeline-marker">04</span>
+              <div>
+                <p>04 · INTERACCIÓN</p>
+                <h3>Revisión de navegación y formulario</h3>
+                <span class="advance-detail" hidden
+                  >El menú y los enlaces recorren el sitio; el formulario valida los campos
+                  localmente.</span
+                >
+              </div>
+              <span class="timeline-state">En revisión</span>
+            </article>
+          </div>
+          <p class="proposal-caption">
+            El prototipo anterior de la plataforma no se presenta como producto funcional ni como
+            avance vigente.
+          </p>
+        </div>
+      </section>
+      <section class="page-cta">
+        <div class="container">
+          <div>
+            <p class="eyebrow"><span></span> ¿Tienes alguna pregunta?</p>
+            <h2>Escríbenos desde<br />la sección de contacto.</h2>
+          </div>
+          <a class="btn-large light-button" href="contacto.html"
+            >Ir a contacto <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="footer-brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">tc</span
+          ><span>Trueque de<br />Conocimiento</span></a
+        >
+        <p>
+          Una propuesta académica para compartir saberes<br />y fortalecer el aprendizaje entre
+          estudiantes.
+        </p>
+        <nav aria-label="Navegación del pie de página">
+          <a href="nosotros.html">Nosotros</a><a href="objetivos.html">Objetivos</a
+          ><a href="avances.html">Avances</a><a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span>Proyecto académico · Universidad del Valle</span
+        ><span>© <span id="current-year">2026</span> Trueque de Conocimiento</span>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
